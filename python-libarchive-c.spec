@@ -47,17 +47,17 @@ to dynamically load and access the C library.
 Pythonowy interfejs do libarchive. Wykorzystuje standardowy moduł
 ctypes do dynamicznego ładowania i dostępu do biblioteki C.
 
-%package -n python3-libarchive
+%package -n python3-libarchive-c
 Summary:	Python interface to libarchive
 Summary(pl.UTF-8):	Pythonowy interfejs do libarchive
 Group:		Libraries/Python
 Requires:	python3-modules >= 1:3.4
 
-%description -n python3-libarchive
+%description -n python3-libarchive-c
 A Python interface to libarchive. It uses the standard ctypes module
 to dynamically load and access the C library.
 
-%description -n python3-libarchive -l pl.UTF-8
+%description -n python3-libarchive-c -l pl.UTF-8
 Pythonowy interfejs do libarchive. Wykorzystuje standardowy moduł
 ctypes do dynamicznego ładowania i dostępu do biblioteki C.
 
@@ -111,7 +111,7 @@ rm -rf $RPM_BUILD_ROOT
 %endif
 
 %if %{with python3}
-%files -n python3-libarchive
+%files -n python3-libarchive-c
 %defattr(644,root,root,755)
 %doc LICENSE.md README.rst
 %{py3_sitescriptdir}/libarchive
