@@ -6,7 +6,7 @@ Summary:	Python interface to libarchive
 Summary(pl.UTF-8):	Pythonowy interfejs do libarchive
 Name:		python3-libarchive-c
 Version:	5.1
-Release:	2
+Release:	3
 License:	CC0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/libarchive/
