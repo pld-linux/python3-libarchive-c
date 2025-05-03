@@ -5,13 +5,13 @@
 Summary:	Python interface to libarchive
 Summary(pl.UTF-8):	Pythonowy interfejs do libarchive
 Name:		python3-libarchive-c
-Version:	5.1
-Release:	3
+Version:	5.2
+Release:	1
 License:	CC0
 Group:		Libraries/Python
 #Source0Download: https://pypi.org/simple/libarchive/
-Source0:	https://files.pythonhosted.org/packages/source/l/libarchive-c/libarchive-c-%{version}.tar.gz
-# Source0-md5:	b27a4239fe075732d1470950df2d3b05
+Source0:	https://files.pythonhosted.org/packages/source/l/libarchive-c/libarchive_c-%{version}.tar.gz
+# Source0-md5:	a66bd9489160267c8828ad91cac038b8
 URL:		https://pypi.org/project/libarchive-c/
 BuildRequires:	libarchive-devel
 BuildRequires:	python3-modules >= 1:3.8
@@ -35,7 +35,7 @@ Pythonowy interfejs do libarchive. Wykorzystuje standardowy moduł
 ctypes do dynamicznego ładowania i dostępu do biblioteki C.
 
 %prep
-%setup -q -n libarchive-c-%{version}
+%setup -q -n libarchive_c-%{version}
 
 %build
 %py3_build
